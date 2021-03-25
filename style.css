@@ -1,15 +1,14 @@
 body {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     margin: 20px;
-    font-family: 'Candara', sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-weight: 600;
 }
 
 select {
-    width: 100%;
-    font-family: 'Candara', sans-serif;
+    width: 25%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     margin-top:10px;
     margin-bottom: 10px;
     padding:3px 10px;
@@ -18,4 +17,52 @@ select {
     background-color:#f6f6f6;
     margin:8px 0;
     display:inline-block;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('img/fondo-nubes.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+table {     
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 13px;     
+    width: 25%; 
+    text-align: center;    
+    border-collapse: collapse; 
+    margin-top: 30px;
+}
+
+th {     
+    font-size: 13px;     
+    font-weight: bold;     
+    padding: 8px;     
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    
+    color: rgb(47, 90, 177); 
+}
+
+td {    
+    padding: 8px;     
+    background: #e8edff;     
+    border-bottom: 1px solid #fff;
+    color: rgb(45, 45, 160);    
+    border-top: 1px solid transparent; 
+}
+
+tr:hover td { 
+    background: #d0dafd; 
+    color: rgb(29, 29, 160); 
+}
+
+#title {
+    background: #d0dafd; 
 }

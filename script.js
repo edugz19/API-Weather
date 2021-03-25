@@ -49,16 +49,43 @@ function tiempo(id){
             var temp = [];
             temp = JSON.parse(JSON.stringify(json));
             var datos = document.getElementById("div");
-            datos.innerHTML = ` <br/><p>Altitud: ${temp.municipio.ALTITUD}</p>
-                                <p>Tiempo actual: ${temp.stateSky.description}</p>
-                                <p>Temperatuta actual: ${temp.temperatura_actual}</p>
-                                <p>Temperatura máxima: ${temp.temperaturas.max}</p>
-                                <p>Temperatura mínima: ${temp.temperaturas.min}</p>
-                                <p>Humedad: ${temp.humedad}</p>
-                                <p>Viento: ${temp.viento}</p>
-                                <p>Lluvia: ${temp.lluvia}</p>`;
-            
+            datos.innerHTML = ` <table id="table">
+                                    <tr>   
+                                        <th id="title">Tiempo en ${temp.municipio.NOMBRE}</th>
+                                    </tr>
+                                    <tr>   
+                                        <th>Altitud</th>
+                                        <td>${temp.municipio.ALTITUD}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Tiempo actual</th>
+                                        <td>${temp.stateSky.description}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Temperatura actual</th>
+                                        <td>${temp.temperatura_actual}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Temperatura máxima</th>
+                                        <td>${temp.temperaturas.max}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Temperatura mínima</th>
+                                        <td>${temp.temperaturas.min}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Humedad</th>
+                                        <td>${temp.humedad}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Viento</th>
+                                        <td>${temp.viento}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Lluvia</th>
+                                        <td>${temp.lluvia}</td>
+                                    </tr>
+                                </table>`;
         console.log(json)
         })
 }
-
